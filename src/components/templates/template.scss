@@ -1,0 +1,205 @@
+.row_{
+    padding: 20px;
+@media only screen and (max-width : 480px){
+    padding: 10px;
+    }
+    .template-fold{
+        display: flex;
+        margin-left: 20px;
+        margin-bottom: 7rem;
+        @media only screen and (max-width : 768px){
+            display: block;
+            margin-left: 0px;
+        }
+        @media only screen and (max-width : 480px){
+            max-width: 100%;
+            box-sizing: border-box;
+        }
+        .template-tags{
+            flex: .2;
+            margin-right: 20px;
+            margin-top: 26px;
+            cursor : pointer;
+            .selected-dimensions{
+                @media only screen and (max-width : 480px){
+                    display : none;
+                }
+                ul{
+                    list-style-image : url(../../assets/Check.svg);
+                    margin-top: 1rem;
+                    li{
+                        font-weight: 500;
+                        font-size: 20px;
+                        margin-bottom: 1.2rem;
+                        &::marker{
+                            width: 20px;
+                            height: 34px;
+                        }
+                    }
+                }
+            }
+            @media only screen and (max-width : 768px){
+                display: flex;
+                flex-wrap: wrap;
+                flex: 1;
+                margin-right: 0;
+                margin-bottom: 20px;
+                width: 70%;
+            }
+            @media only screen and (max-width : 480px)  {
+                width: 100%;
+            }
+            .tag-item{
+                border: 1px solid #dbd9d9;
+                padding: 10px;
+                margin-bottom: 15px;
+                display: flex;
+                justify-content: center;
+                @media only screen and (max-width : 768px){
+                    margin-right: 10px;
+                }
+                @media only screen and (max-width : 480px){
+                    padding: 6px;
+                }
+                img{
+                    width: 15px;
+                    margin-right: 15px;
+                    @media only screen and (max-width : 480px){
+                        width: 10px;
+                        margin-right: 10px;
+                    }   
+                }
+                p{
+                    font-size: 13px;
+                    color: #484848;
+                    @media only screen and (max-width : 480px){
+                        font-size: 11px;
+                    }
+                }
+            }
+        }
+        .template-image{
+            flex : .7;
+            @media only screen and (max-width : 768px){
+                flex: 1;
+                width: 100%;
+            }
+            img{
+                margin-bottom: 15px;
+                @media only screen and (max-width : 480px){
+                    width: 100px;
+                }
+            }
+            .bordering{
+                border: 1px solid #dbd9d9;
+                padding: 20px;
+                img{
+                    width: 100%;
+                }
+                @media only screen and (max-width : 480px){
+                    margin-top: 10px;
+                    padding: 10px;   
+                    border: none;
+                }
+                .folder{
+                        text-align: center;
+                        position: relative;
+                        margin-left: auto;
+                        margin-right: auto;
+                        margin-bottom: 20px;
+                        z-index: 1;
+                        cursor: pointer;
+                        @media only screen and (max-width : 480px){
+                            max-width: calc(340px - 80px);
+                        }
+                        img{
+                            @media only screen and (max-width : 480px){
+                                max-width: calc(100% - 10px);
+                            }   
+                        }
+                    .tick{
+                        position: absolute;
+                        right: 10px;
+                        top: 10px;
+                        @media only screen and (max-width : 480px){
+                            max-width: 30px;
+                        }
+                    }
+                    .overlay{
+                        position: absolute;
+                        top: 0;
+                        left : 0;
+                        right: 0;
+                        bottom: 0;
+                        z-index: 2;
+                        background: rgba($color: #000000, $alpha: .1);
+                        @media only screen and (max-width : 480px){
+                            max-width: 100%;
+                        }
+                        .button-wrapper{
+                            position: absolute;
+                            left: 0;
+                            right : 0;
+                            top: calc(50% - 37px);
+                            transform: translateY(50%);
+                        }
+                        button{
+                            padding: 7px 20px;
+                            border-radius: 3px;
+                            width: 120px;
+                            background: #484848!important;
+                            opacity: 0;
+                            transition: all .3s;
+                            @media only screen and (max-width : 480px){
+                               opacity: 1;
+                               width: 100px;
+                             }
+                            &:hover{
+                                opacity: 1;
+                            }
+                        }
+                    }
+                }
+                .row{
+                    @media only screen and (max-width : 480px){
+                        display: block!important; 
+                    }
+                    .col{
+                        padding: 20px;
+                    }
+                    img{
+                        @media only screen and (max-width : 480px){
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+            .direction-btn{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-top: 30px;
+                p{
+                    font-size: 13px;
+                    color: #484848;
+                }
+                .back{
+                    cursor: pointer;
+                }
+                
+                .spinner{
+                    position: fixed;
+                    right: 20px;
+                    top: 10px;
+                }
+            }
+            .row{
+                .blk{
+                    background: #484848;
+                    width : 100%;
+                }
+            }
+        }
+
+    }
+}

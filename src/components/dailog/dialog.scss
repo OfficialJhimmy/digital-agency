@@ -1,0 +1,47 @@
+.dialog{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    background: rgba($color: #000000, $alpha: .7);
+    .card{
+        width : 31%;
+        margin: auto;
+        transform: translateY(50%);
+        padding: 20px;
+        text-align: center;
+        @media only screen and (max-width: 768px){
+            width: 90%;
+        }
+        img{
+            width: 50px;
+            margin: 10px auto;
+        }
+        h5{
+            font-size: 22px;
+        }
+        p{
+            font-size: 13px;
+            margin-bottom: 30px;
+        }
+        .btns{
+            display:  flex;
+            align-items: center;
+            justify-content: space-between;
+            .close{
+                background: none;
+                color: #484848;
+            }
+            button{
+                padding: 8px 20px;
+                font-size: 13px;
+                border-radius: 3px;
+            }
+        }
+        .spinn{
+            transform: translateY(30%);           
+        }
+    }
+}

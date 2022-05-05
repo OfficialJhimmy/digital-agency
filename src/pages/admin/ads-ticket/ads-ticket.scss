@@ -1,0 +1,174 @@
+.ads-ticket {
+  position: relative;
+  z-index: 5;
+  .dashboard-main {
+    .ads-heading {
+      display: flex;
+      align-items: center;
+      padding: 10px 20px;
+      border-bottom: 1px solid #d6d6d6;
+      p {
+        margin-right: 30px;
+        cursor: pointer;
+      }
+    }
+    .ads-wrapper {
+      background: transparent !important;
+      text-align: left;
+      margin-top: 10px !important;
+      .ads-card {
+        margin-bottom: 10px;
+        padding: 10px 15px;
+        background: white;
+        .card-title {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-bottom: 0;
+          h5 {
+            font-size: 14px;
+            font-weight: 600;
+          }
+          .files {
+            font-size: 12px;
+            img {
+              width: 12px;
+            }
+          }
+        }
+        h6 {
+          font-size: 11px;
+          color: #808080;
+          font-weight: 500;
+        }
+        p {
+          font-size: 12px;
+          font-weight: 500;
+          color: #484848;
+        }
+        .user-profile {
+          display: flex;
+          align-items: center;
+          margin-top: 10px;
+          cursor: pointer;
+          img {
+            margin-right: 10px;
+          }
+          p {
+            font-weight: 400;
+            color: #484848;
+            font-size: 11px;
+            span {
+              font-weight: 600;
+            }
+          }
+        }
+        .instruct-btns {
+          display: flex;
+          align-items: center;
+          text-align: right;
+          justify-content: right;
+          margin-top: 10px;
+          a {
+            text-decoration: none;
+            margin-right: 10px;
+            font-size: 12px;
+          }
+          button {
+            font-size: 13px;
+            padding: 5px 20px;
+          }
+        }
+      }
+    }
+  }
+  .assign-modal {
+    position: absolute;
+    top: 0;
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100% !important;
+    z-index: 10;
+    .modal-wrapper {
+      z-index: 10;
+      width: 400px;
+      background: white;
+      margin-top: 10%;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: left;
+      padding: 20px;
+      h5 {
+        font-size: 15px;
+        font-weight: 600;
+      }
+      form {
+        label {
+          font-size: 13px;
+        }
+        input {
+          border: 1px solid #d6d6d6;
+          padding: 7px 10px;
+          margin-bottom: 10px;
+          width: 100%;
+          font-size: 13px;
+        }
+        p {
+          font-size: 13px;
+        }
+        .suggestions {
+          margin-top: 10px;
+          .selected {
+            background: #d6d6d6;
+          }
+          .user-profile {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            cursor: pointer;
+            img {
+              margin-right: 20px;
+            }
+            p {
+              color: #484848;
+            }
+            .user-text {
+              h6 {
+                margin-bottom: 0;
+                color: #484848;
+                font-size: 14px;
+              }
+              p {
+                font-size: 11px;
+                color: #808080;
+              }
+            }
+          }
+        }
+        .done-btn {
+          text-align: right;
+          margin-top: 2rem;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          p {
+            cursor: pointer;
+          }
+          button {
+            padding: 5px 20px;
+            // width: 90px;
+          }
+        }
+      }
+    }
+  }
+  .btn-assigned {
+    background: rgb(7, 184, 7);
+  }
+
+  .btn__wrapper--preview {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

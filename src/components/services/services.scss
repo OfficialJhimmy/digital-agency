@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+// $image : url()
+.services{
+    padding-top: 0px;
+    padding-bottom: 100px;
+    // background: #FEF2CD;
+    backface-visibility: visible;
+    // background: #0cb9cf;
+    // color: #333333;
+    // font-family: 'Montserrat Alternates', sans-serif;
+    position: relative;
+    // &::before{
+    //     content: "";
+    //     background-image: url(../../assets//waves.svg);
+    //     opacity: .08;
+    //     position: absolute;
+    //     top: 0;
+    //     left: 0;
+    //     right: 0;
+    //     bottom: 0;
+    //     z-index: -1;
+    // }
+    // .container{
+        .service-text{
+            color: white;
+            h2{
+                font-weight: 700;
+                margin-bottom: 0;
+                font-size: 37px;
+                @media screen and (max-width : 576px) {
+                    font-size: 1.6rem;
+                }
+            }
+            p{
+                font-size: 14px;
+                line-height: 1.4;
+                font-weight: normal;
+                width: 55%;
+                margin: 10px auto;
+                @media screen and (max-width : 576px) {
+                    font-size: 13px;
+                    width: 90%;
+                }
+            }
+            button{
+                padding: 7px 30px;
+                margin-top: 30px;
+            }
+            .row__{
+                align-items: center;
+                height: 100vh; 
+                @media only screen and (max-width: 590px){
+                    height : 90vh;
+                }
+                .row{
+                    --bs-gutter-x: 0rem;
+                    height: 90vh;
+                    justify-content: center;
+                }
+                .swiper-button-next{
+                    color: #EE315D;
+                    @media only screen and (max-width: 480px){
+                        display: none;
+                    }
+                }
+                .swiper-button-prev{
+                    color: #EE315D;
+                    @media only screen and (max-width: 480px){
+                        display: none;
+                    }
+                }
+                .swiper-container-horizontal {
+                    .swiper-pagination-bullets{
+                        .swiper-pagination-bullet{
+                            background: #f77b98;
+                            width: 20px;
+                            height: 20px;
+                        }
+                    } 
+                } 
+                .swiper-container{
+                    @media only screen and (max-width: 480px){
+                        height: 90vh;
+                    }
+                }
+                .frame0{
+                    background-image: url(../../assets/portrait-cool-man-with-sunglasses-copy-space.jpg);
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    @media screen and (max-width: 768px){
+                        background-position: right;
+                        background-image: linear-gradient(0deg, rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url(../../assets/portrait-cool-man-with-sunglasses-copy-space.jpg);
+                    }
+                    .content-text{
+                        @media screen and (max-width: 768px){
+                            margin-top: 200px;
+                        }
+                        @media screen and (max-width: 480px){
+                            margin-top: 180px;
+                        }
+                        p{
+                            font-size: calc(32px + (84 - 34) * ((100vw - 300px) / (1600 - 300)));
+                            line-height: 1.1;
+                            font-weight: 700;
+                            @media screen and (max-width: 680px){
+                                font-size: 60px;
+                            }
+                            @media screen and (max-width: 480px){
+                                font-size: 43px;
+                            }
+                        }
+                    }
+                }
+                .frame1{
+                    background-image: url(../../assets/image1.jpg);
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    @media screen and (max-width: 768px){
+                        background-position: right;
+                        background-image: linear-gradient(0deg, rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../../assets/image1.jpg)
+                    }
+                    @media screen and (max-width: 480px){
+                        background-position: center;
+                    }
+                }
+                .frame2{
+                    // background-image: url(../../assets/pexel.jpg);
+                    background-image: url(../../assets/store1.jpg);
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    @media screen and (max-width: 768px){
+                        background-position: right;
+                        background-image: linear-gradient(0deg, rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../../assets/store1.jpg)
+                    }
+                    @media screen and (max-width: 480px){
+                        background-position: center;
+                    }
+                }
+                .frame3{
+                    background: url(../../assets/chess.jpg);
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-position: 50% 50%;
+                    @media screen and (max-width: 768px){
+                        background-position: right;
+                    }
+                    @media screen and (max-width: 480px){
+                        background-position: center;
+                    }
+                }
+                .frame4{
+                    background-image: linear-gradient(0deg, rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url(../../assets/who.jpg);
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-position: 20% 50%;
+                    @media screen and (max-width: 768px){
+                        background-position: right;
+                        background-image: linear-gradient(0deg, rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../../assets/who.jpg)
+                    }
+                    @media screen and (max-width: 480px){
+                        background-position: center;
+                    }
+                }
+                .content-text{
+                    text-align: left;
+                    margin-top: 12%;
+                    margin-left : 10%;
+                    width: 40%;
+                    @media screen and (max-width : 768px){
+                        width: 90%;
+                        margin: 200px auto;
+                    }
+                    @media screen and (max-width : 768px){
+                        width: 90%;
+                        margin-top : 120px;
+                    }
+                    img{
+                        width: 45px;
+                        margin-bottom: 20px;
+                    }
+                    h3{
+                        font-size: 52px;
+                        font-weight: 800;
+                        color:  white;
+                        text-transform: uppercase;
+                        transition: transform .3s;
+                        @media screen and (max-width : 768px) {
+                            font-size: 38px;
+                        }
+                        @media screen and (max-width : 480px) {
+                            font-size: 2.2rem;
+                        }
+                    }
+                    p{
+                        color: white;
+                        font-size: 1.1rem;
+                        line-height: 1.8;
+                        width: 100%;
+                        @media screen and (max-width : 480px) {
+                            font-size: 17px;
+                        }
+                    }
+                    .text2{
+                        margin-left: 10%;
+                        @media screen and (max-width : 568px){
+                            margin-left: 0;
+                        }
+                    }
+                    .text3{
+                        margin-left: 20%;
+                        @media screen and (max-width : 568px){
+                            margin-left: 0;
+                        }
+                    }
+                    .text4{
+                        margin-left: 30%;
+                        @media screen and (max-width : 568px){
+                            margin-left: 0;
+                        }
+                    }
+                    // p{
+                    //     font-size: 13px;
+                    //     width: 100%;
+                    //     color: #484848;
+                    //     @media screen and (max-width : 480px){
+                    //         font-size: 12px;
+                    //     }
+                    // }
+                    button{
+                        padding: 10px 20px;
+                        border: none;
+                        color: white;
+                        margin-top: 10px;
+                        }
+                    }
+                .col-md-4{
+                    text-align: right;
+                    @media screen and (max-width : 576px) {
+                        text-align: center;
+                    }
+                    .img{
+                        width: 270px;
+                        height: 270px;
+                        border-radius: 50%;
+                        background: #C4C4C4;
+                        @media screen and (max-width : 768px) {
+                            margin-top: 3rem;
+                            margin-left: auto;
+                            margin-right: auto;
+                        }
+                    }
+                }
+            }
+        }
+    // }
+}

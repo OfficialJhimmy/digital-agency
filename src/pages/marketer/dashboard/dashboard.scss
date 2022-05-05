@@ -1,0 +1,135 @@
+.welcome__secondary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .btn-profile__setup {
+    padding: 10px 13px;
+    border-radius: 5px;
+    margin-left: 30px;
+
+    a {
+      color: #fff;
+    }
+  }
+  .heartbeat {
+    -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+    animation: heartbeat 1.5s ease-in-out infinite both;
+  }
+}
+
+.progress--main__cover {
+  display: flex;
+  flex-direction: column;
+  &:not(:last-child) {
+    margin: 30px 0;
+  }
+  h3 {
+    font-size: 14px;
+    font-weight: 500;
+    text-align: left;
+  }
+
+  .parent__progress {
+    height: 15px;
+    width: 100%;
+    background-color: whitesmoke;
+    border-radius: 10px;
+
+    .child__progress {
+      height: 100%;
+      border-radius: 10px;
+      text-align: right;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .span__progress--text {
+        padding: 7px;
+        color: #333;
+        font-weight: 400;
+        font-size: 13px;
+      }
+    }
+    .u-assigned {
+      width: 29%;
+      background-color: #99ccff;
+    }
+
+    .u-pending {
+      width: 71%;
+      background-color: #ffa500;
+    }
+
+    .u-idle {
+      width: 0%;
+      background-color: #ff00ff;
+    }
+  }
+}
+@-webkit-keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform: scale(0.91);
+    transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(0.98);
+    transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  33% {
+    -webkit-transform: scale(0.87);
+    transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+}
+@keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform: scale(0.91);
+    transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(0.98);
+    transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  33% {
+    -webkit-transform: scale(0.87);
+    transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+}

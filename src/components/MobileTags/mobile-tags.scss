@@ -1,0 +1,32 @@
+.mobile-tags{
+    background: #151933;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: 0;
+    top: 50px;
+    height: 100%;
+    padding-bottom: 10rem;
+    z-index : 10;
+    a {
+        color: white;
+        text-decoration: none;
+        font-size: 12px;
+    }
+    p{
+        color: white;
+        font-size: 12px;
+    }
+    .tab-item{
+        display: flex;
+        flex-direction: column;
+        padding: 20px 10px;
+        justify-content: center;
+        text-align: center;
+        border-bottom: 1px solid grey;
+        img{
+            width: 20px;
+            margin: auto;
+        }
+    }
+}

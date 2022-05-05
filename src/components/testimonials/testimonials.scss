@@ -1,0 +1,85 @@
+.testimonial{
+    text-align: left;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    @media screen and (max-width : 768px){
+        margin-bottom: 60px;
+        margin-top: 60px;
+    }
+    .container{
+        h3{
+            font-size: 36px;
+            font-weight: 700;
+            color: #333333;
+            @media screen and (max-width : 768px){
+                font-size: 1.8rem;
+            }
+        }
+        p{
+            color : #333333;
+            margin-top: -10px;
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+            @media screen and (max-width : 768px){
+                font-size: 12px;
+            }
+            div{
+                width: 30px;
+                height: 2px;
+                background: #333333;
+                margin-right: 10px;
+            }
+        }
+        .testimony{
+            margin-top: 50px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            align-items: center;
+            @media screen and (max-width : 768px){
+                grid-template-columns: repeat(1, 1fr);
+            }
+            .item{
+                .user-profile{
+                    .profile-top{
+                        display: flex;
+                        align-items: center;
+                        img{
+                            width: 60px;
+                            height: 60px;
+                            @media screen and (max-width : 768px){
+                                width: 40px;
+                                height: 40px;
+                            }
+                        }
+                        .name{
+                            margin-left: 10px;
+                            h5{
+                                font-size: 16px;
+                                margin-bottom: 5px;
+                                font-weight: 500;
+                            }
+                            img{
+                                width: 20px;
+                                height: 20px;
+                            }
+                        }
+                        
+                    }
+                    .comment{
+                        p{
+                            margin-top: 30px;
+                            color: #484848;
+                            width: 80%;
+                        }
+                    }
+                    .publisher{
+                        margin-top: 10px;
+                        font-size: 12px;
+                        font-weight: 300;
+                    }
+                }
+            }
+        }
+    }
+}

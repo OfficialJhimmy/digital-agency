@@ -1,0 +1,209 @@
+.dashboard{
+    .message{
+        text-align: left;
+        .msg-container{
+            display: flex;
+            margin-left: 30px;
+            p{
+                font-size: 13px;
+            }
+            h3{
+                font-size: 22px;
+            }
+            h5{
+                font-size: 18px;
+                font-weight: 500;
+            }
+            h6{
+                font-size: 14px;
+            }
+            .msg-list{
+                flex : 0.3;
+                background: white;
+                margin-right: 10px;
+                .headings{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding-left: 15px;
+                    padding-right: 15px;
+                    margin-top: 20px;
+                    img{
+                        width: 20px;
+                    }
+                }
+                .search-wrapper{
+                    margin-left: 15px;
+                    margin-right: 15px;
+                    border: 1px solid #F0F0F0;
+                    padding: 6px;
+                    border-bottom: 1px solid #F0F0F0;
+                    margin-bottom: 20px;
+                    input{
+                        border: none;
+                        font-size: 13px;
+                    }
+                    img{
+                        width: 15px;
+                        margin-right: 10px;
+                    }
+                }
+                .msg-queue{
+                    .today{
+                            .h-text{
+                                padding-left: 15px;
+                                padding-right: 15px;
+                            }
+                            .msg-item{
+                            display: flex;
+                            justify-content: space-between;
+                            margin-bottom: 15px;
+                            width: 100%;
+                            border-bottom: 1px solid #F0F0F0;
+                            padding-left: 15px;
+                            padding-right: 15px;
+                            padding-bottom: 10px;
+                            .msg-wrapper{
+                                display: flex;
+                                img{
+                                    width: 30px;
+                                    height: 30px;
+                                    margin-right: 10px;
+                                }
+                                .content{
+                                    color: blue;
+                                }
+                                h6{
+                                    margin-bottom: 4px;
+                                    font-size: 13px;
+                                }
+                                p{
+                                    line-height: 1.2;
+                                    font-size: 12px;
+                                    color: #484848;
+                                }
+                            }
+                            .time{
+                                p{
+                                    font-size: 11px;
+                                    font-weight: 500;
+                                }
+                            }
+                        }
+                    }
+                }
+                .yesterday{
+                    padding-left: 15px;
+                    padding-right: 15px;
+                    .msg-item{
+                        display: flex;
+                        justify-content: space-between;
+                        margin-bottom: 15px;
+                        width: 100%;
+                        img{
+                            margin-right: 10px;
+                            width: 25px;
+                            height: 25px;
+                        }
+                        .msg-wrapper{
+                            display: flex;
+                            p{
+                                font-size: 12px;
+                                line-height: 1.2;
+                            }
+                            .content{
+                                color: blue;
+                            }
+                            h6{
+                                margin-bottom: 4px;
+                                font-size: 13px;
+                            }
+                        }
+                    }
+                    .time{
+                        p{
+                            font-size: 11px;
+                            font-weight: 500;
+                        }
+                    }
+                }
+            }
+            .msg-view{
+                flex: .7;
+                background: white;
+                position: relative;
+                .msg-heading{
+                    border-bottom: 1px solid #F0F0F0;
+                    padding: 20px;
+                    padding-bottom: 10px;
+                    .views-heading{
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        img{
+                            width: 20px;
+                            margin-left: 15px;
+                        }
+                    }
+                    .sender-info{
+                        display: flex;
+                        justify-content: space-between;
+                        .user{
+                            display: flex;
+                            img{
+                                width: 30px;
+                                height: 30px;
+                                object-fit: cover;
+                                margin-right: 10px;
+                            }
+                            .user-detail{
+                                h6{
+                                    margin-bottom: 2px;
+                                    font-size: 12px;
+                                }
+                                p{
+                                    font-size: 12px;
+                                }
+                                .via{
+                                    color: #808080;
+                                }
+                            }
+                        }
+                        .msg-time{
+                            p{
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                }
+                .msg-large-v{
+                    padding: 20px;
+                    .view-lg{
+                        display: flex;
+                        img{
+                            width: 30px;
+                            height: 30px;
+                            margin-right: 10px;
+                        }
+                    }
+                    .msg-btns{
+                        display: flex;
+                        align-items: center;
+                        position: absolute;
+                        bottom: 30px;
+                        button{
+                            padding: 7px 20px;
+                            font-size: 12px;
+                            margin-right: 20px;
+                        }
+                        p{
+                            font-size: 12px;
+                            font-weight: 500;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}

@@ -1,0 +1,199 @@
+.marketer-preview {
+  text-align: left;
+  .dashboard-main-wrapper {
+    .dashboard-main {
+      .preview-content {
+        background: white;
+        margin-left: 30px;
+        .main-heading {
+          border-bottom: 1px solid #d6d6d6;
+          padding: 15px 20px;
+
+          h4 {
+            font-size: 20px;
+            color: #484848;
+            margin-bottom: 0;
+          }
+          .smm {
+            display: flex;
+            align-items: center;
+            img {
+              margin-left: 10px;
+              width: 30px;
+              border-radius: 50%;
+            }
+            p {
+              font-size: 13px;
+            }
+          }
+        }
+
+        .prev-container {
+          padding: 20px;
+          display: flex;
+          align-items: baseline;
+          .ads-detail {
+            flex: 0.6;
+            margin-right: 50px;
+            h5 {
+              font-size: 15px;
+              color: #484848;
+              font-weight: 600;
+            }
+            p {
+              font-size: 15px;
+              color: #484848;
+              width: 80%;
+            }
+            .campaign {
+              .campaign-list {
+                display: flex;
+                align-items: center;
+                width: unset;
+                span {
+                  font-size: 14px;
+                  margin-right: 20px;
+                }
+              }
+            }
+            .social {
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              width: 100%;
+              p {
+                width: 100%;
+              }
+            }
+            .dates {
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              width: 70%;
+              p {
+                width: 100%;
+              }
+            }
+            .locations {
+              display: grid;
+              grid-template-columns: repeat(auto-fit, 1fr);
+              align-items: center;
+              span {
+                font-size: 14px;
+                margin-right: 20px;
+                margin-bottom: 8px;
+              }
+            }
+            .target-area {
+              ul {
+                padding-left: 20px;
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minMax(250px, 3fr));
+                li {
+                  font-size: 15px;
+                  margin-bottom: 15px;
+                }
+              }
+            }
+          }
+          .sender {
+            flex: 0.3;
+            .sender-profile {
+              h5 {
+                font-size: 16px;
+                color: #484848;
+              }
+              .sender-info {
+                display: flex;
+                align-items: center;
+                img {
+                  width: 30px;
+                  margin-right: 10px;
+                  border-radius: 50%;
+                  margin-bottom: 5px;
+                }
+                p {
+                  font-size: 13px;
+                  color: #484848;
+                }
+              }
+              .email {
+                color: blue;
+                text-decoration: underline;
+                font-size: 13px;
+                margin-bottom: 5px;
+              }
+              p {
+                font-size: 13px;
+              }
+            }
+            .banner {
+              margin-top: 30px;
+              h5 {
+                font-size: 16px;
+                color: #484848;
+              }
+              .banner-img {
+                display: flex;
+                align-items: center;
+
+                img {
+                  margin-right: 10px;
+                  width: 40px;
+                  height: 40px;
+                  cursor: pointer;
+                  &:hover {
+                    transform: scale(5);
+                  }
+                }
+              }
+            }
+            .action-btns {
+              button {
+                padding: 8px;
+                width: 100%;
+                font-size: 13px;
+                border-radius: 5px;
+              }
+              .approve {
+                background: #33c0ce;
+              }
+              .reject {
+                color: rgb(226, 66, 66);
+              }
+              .approve-text {
+                p {
+                  font-weight: 500;
+                  margin-left: 10px;
+                }
+              }
+            }
+          }
+        }
+        .lower-btns {
+          display: flex;
+          align-items: center;
+          padding: 20px;
+          padding-bottom: 60px;
+          a {
+            text-decoration: none;
+            color: #484848;
+            font-size: 15px;
+          }
+
+          .icon-back {
+            width: 24px;
+            height: 24px;
+            margin-right: 6px;
+          }
+          // button{
+          //     padding: 6px 10px;
+          //     font-size: 13px;
+          //     color: white;
+          //     margin-left: 50px;
+          // }
+        }
+      }
+    }
+  }
+}

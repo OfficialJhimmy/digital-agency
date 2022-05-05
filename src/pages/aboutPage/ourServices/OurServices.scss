@@ -1,0 +1,50 @@
+.our-services{
+    padding-top: 80px;
+    // padding-bottom: 80px;
+    text-align: left;
+    .row{
+        margin-bottom: 120px;
+        align-items: center!important;
+        @media screen and (max-width: 590px) {
+            margin-bottom: 60px;
+        }
+        .second{
+            display: none;
+            @media screen and (max-width: 990px) {
+                display: block;
+            }
+        }
+        .bottom{
+            @media screen and (max-width: 990px) {
+                display: none;
+            }
+        }
+        @media screen and (max-width : 990px){
+            display: block;
+        }
+        .col{
+            @media screen and (max-width : 990px){
+                margin-bottom: 40px;
+                text-align: center;
+            }
+            .content{
+                img{
+                    width: 350px;
+                    @media screen and (max-width: 590px) {
+                        width: 80%;
+                        
+                    }
+                }
+                h3{
+                    font-weight: 600;
+                }
+                p{
+                    @media screen and (max-width: 590px) {
+                        font-size: 16px;
+                        text-align: justify;
+                    }
+                }
+            } 
+        }
+    }
+}

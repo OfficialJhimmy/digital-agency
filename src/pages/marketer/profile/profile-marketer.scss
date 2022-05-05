@@ -1,0 +1,21 @@
+.dashboard-main {
+  .user-detail {
+    .content {
+      margin-bottom: 1.5rem;
+      h5 {
+        font-size: 18px;
+      }
+      p {
+        font-size: 16px !important;
+      }
+    }
+    button {
+      padding: 8px 15px;
+      color: white;
+      border-radius: 5px;
+      a {
+        color: white;
+      }
+    }
+  }
+}

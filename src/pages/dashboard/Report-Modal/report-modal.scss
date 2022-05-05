@@ -1,0 +1,15 @@
+.report-modal{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+    .history-table{
+        background: white;
+        border-radius: 5px;
+        margin-top: 10%;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

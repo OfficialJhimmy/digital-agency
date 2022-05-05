@@ -1,0 +1,14 @@
+.homepage{
+    overflow-x: hidden;
+    // @media screen and (max-width : 768px){
+    //     .steps{
+    //         display: none;
+    //     }
+    // }
+    @media screen and (max-width : 480px){
+        .container{
+            padding-left: 4%;
+            padding-right: 4%;
+        }
+    }
+}

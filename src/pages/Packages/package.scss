@@ -1,0 +1,65 @@
+.packages{
+    background: #E5E5E5;
+    .small-title{
+        padding-top: 0;
+        background: transparent!important;
+        .dashboard-main-wrapper{
+            flex: 1;
+            display: block!important;
+            .dashboard-main{
+                // background: white;
+                padding-right: 20px;
+                max-width: 1140px;
+                .content-form{
+                    margin-top: 5rem;
+                    background: transparent!important;
+                    @media screen and (max-width : 480px){
+                        margin-top: 2rem;
+                    }
+                    h3{
+                        text-align: center;
+                        font-size: 34px;
+                        margin-bottom: 0px;
+                        padding-bottom: 0;
+                        @media screen and (max-width : 480px){
+                            font-size: 22px;
+                        }   
+                    }
+                    h5{
+                        text-align: center;
+                        font-size: 34px;
+                        border-bottom: none;
+                        margin-bottom: 0px;
+                        padding-bottom: 0;
+                        @media screen and (max-width : 480px){
+                            font-size: 22px;
+                        }   
+                    }
+                    .price-list{
+                        padding-top: 10px;
+                        .tier{
+                            background: white;
+                            @media screen and (max-width: 480px) {
+                                width: 300px!important;
+                            }
+                            h6{
+                                margin-bottom: 2rem;
+                            }
+                            .title{
+                                margin-bottom: 10px;
+                            }
+                        }
+                    }
+                    .inner-text{
+                        h5{
+                            font-size: 24;
+                            font-weight: 700;
+                            color: #EE315D;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}

@@ -1,0 +1,50 @@
+
+.loading{
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    background: black;
+    text-align: center;
+    z-index: 99999999;
+    color: white;
+    display : none;
+    .wrapper{
+        margin-top: 40vh; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        p{
+            font-size: 2rem;
+            font-weight: 600;
+            margin-right: 20px;
+            text-transform: capitalize;
+            opacity: 0;
+            @media screen and (max-width: 768px){
+                font-size: 1.4rem;                        
+            };
+            @media screen and (max-width: 488px){
+                font-size: 1.2rem;   
+                margin-right: 15px;                     
+            };
+        }  
+    }
+    .icons{
+        opacity: 0;
+        text-align: center;
+        img{
+            opacity: 0;
+            margin-right: 20px;
+        }
+    }
+    .play-icons{
+        opacity : 0;
+        img{
+            opacity : 0;
+            width : 30px;
+            height : 30px;
+            margin-right : 20px;
+        }
+    }   
+}
+
+

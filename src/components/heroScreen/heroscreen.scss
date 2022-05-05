@@ -1,0 +1,255 @@
+.heroscreen {
+  height: 100vh;
+  position: relative;
+  .hero-content {
+    position: absolute;
+    top: 30%;
+    left: 0;
+    right: 0;
+    .logo {
+      display: flex;
+      justify-content: center;
+      width: 500px;
+      margin: auto;
+      object-fit: contain;
+      @media screen and (max-width: 768px) {
+        width: 80%;
+      }
+      // @media screen and (max-width: 768px){
+      //     width: 90%;
+      // };
+    }
+    p {
+      font-size: 1.3rem;
+      font-weight: 700;
+      margin-top: 2rem;
+      width: 600px;
+      margin: 20px auto;
+      text-align: center;
+      @media screen and (max-width: 860px) {
+        width: 90%;
+        text-align: center;
+      }
+      @media screen and (max-width: 480px) {
+        font-size: 16px;
+        width: 100%;
+      }
+    }
+  }
+  .shapes {
+    img {
+      width: 45px;
+      object-fit: cover;
+      @media only screen and (max-width: 768px) {
+        width: 35px;
+      }
+      @media screen and (max-width: 480px) {
+        width: 30px;
+      }
+    }
+    .lower-icons {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      text-align: left !important;
+      img {
+        opacity: 0.8;
+        transition: all 0.5s;
+        &:hover {
+          opacity: 1;
+          transform: translateX(5px);
+        }
+      }
+      .step4 {
+        @media only screen and (max-width: 768px) {
+          display: none;
+        }
+        .icon121 {
+          width: 40px;
+        }
+      }
+      .shap4 {
+        width: 40px;
+      }
+    }
+    .top {
+      position: relative;
+      right: 0;
+    }
+
+    .icon1 {
+      position: absolute;
+      left: 10%;
+      top: 25%;
+      animation: move 1s infinite alternate;
+      @keyframes move {
+        from {
+          transform: translateX(0px);
+        }
+        to {
+          transform: translateX(10px);
+        }
+      }
+      @media screen and (max-width: 480px) {
+        display: none;
+      }
+    }
+    .icon2 {
+      position: absolute;
+      right: 30%;
+      top: 20%;
+      animation: rotate 4s infinite alternate;
+      @keyframes rotate {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(20deg);
+        }
+      }
+      @media screen and (max-width: 768px) {
+        right: 15%;
+      }
+    }
+    .icon3 {
+      position: absolute;
+      left: 10%;
+      bottom: 10%;
+      animation: revering 2s infinite alternate;
+      @keyframes revering {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(-20deg);
+        }
+      }
+    }
+    .icon4 {
+      position: absolute;
+      right: 10%;
+      bottom: 50%;
+      animation: visible 3s infinite alternate;
+      @keyframes visible {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
+    }
+    .icon5 {
+      position: absolute;
+      right: 25%;
+      bottom: 10%;
+      animation: moveup 1s infinite alternate;
+      @keyframes moveup {
+        from {
+          transform: translateY(0deg);
+        }
+        to {
+          transform: translateY(10px);
+        }
+      }
+      @media screen and (max-width: 480px) {
+        display: none;
+      }
+    }
+  }
+  .hero-btns {
+    position: absolute;
+    bottom: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    right: 0;
+    width: 100%;
+    margin: auto;
+    @media screen and (max-width: 480px) {
+      display: block;
+      bottom: 24%;
+    }
+    button {
+      // width: 200px;
+      padding: 10px;
+      margin-left: 10px;
+      transition: all 1s;
+      a {
+        text-decoration: none;
+        color: white;
+        font-weight: 500;
+        font-size: 14px;
+        padding: 10px 80px;
+        &:last-child {
+          color: black;
+          // padding: 10px 60px;
+        }
+      }
+      .login {
+        color: white !important;
+      }
+
+      .register {
+        padding: 10px 70px !important;
+        @media screen and (max-width: 480px) {
+          width: 70% !important;
+          padding: 10px !important;
+        }
+      }
+      @media screen and (max-width: 480px) {
+        margin-bottom: 10px;
+        width: 70%;
+        margin-left: 0;
+      }
+      &:last-child {
+        background: none;
+        border: 1px solid grey;
+        &:hover {
+          color: #fff;
+          transform: scale(0.96);
+          border-radius: 5px;
+        }
+      }
+      &:first-child {
+        &:hover {
+          background: #ce4767;
+          border-radius: 5px;
+          color: antiquewhite;
+          transform: scale(0.96);
+        }
+      }
+    }
+  }
+  .big-text {
+    width: 70%;
+    margin: auto;
+    left: 0;
+    right: 0;
+    h1 {
+      // font-size: 2.5rem;
+      font-size: 1.3rem;
+      font-weight: 700;
+      margin-top: 2rem;
+      width: 600px;
+      margin: 20px auto;
+      text-align: center;
+      // font-size: 1.3rem;
+    }
+    p {
+      @media screen and (max-width: 768px) {
+        width: 90%;
+        text-align: center;
+      }
+    }
+    @media screen and (max-width: 768px) {
+      width: 90%;
+      text-align: center;
+    }
+  }
+}

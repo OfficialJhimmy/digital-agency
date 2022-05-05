@@ -1,0 +1,28 @@
+.story{
+    background : #F2F5F8;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    .title{
+        margin-bottom: 10px;
+        position: relative;
+        &::before{
+            position: absolute;
+            content: "";
+            background: rgb(228, 172, 20);
+            height: 2px;
+            width: 100px;
+            bottom: 0;
+        }
+    }
+    h5{
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        font-weight: 600;
+        @media screen and (max-width : 768px){
+            width: 100%;
+            padding-left: 2%;
+            padding-right: 2%;
+        }
+    }
+}

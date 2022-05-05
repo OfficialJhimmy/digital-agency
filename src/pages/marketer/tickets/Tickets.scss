@@ -1,0 +1,15 @@
+.marketer__avatar {
+  width: 10%;
+}
+
+@media screen and (max-width: 768px) {
+  .marketer__avatar {
+    width: 3%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .marketer__avatar {
+    width: 5%;
+  }
+}

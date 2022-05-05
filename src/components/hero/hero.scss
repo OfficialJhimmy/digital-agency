@@ -1,0 +1,70 @@
+.hero {
+  text-align: center;
+  height: 100%;
+  color: #f1f1f1;
+  .container {
+    width: 80%;
+    background: #333333;
+    border-radius: 5px;
+    margin: 7rem auto;
+    @media screen and (max-width: 576px) {
+      width: 90%;
+    }
+    .hero-text {
+      padding-top: 100px;
+      padding-bottom: 100px;
+      width: 80%;
+      margin: auto;
+      @media screen and (max-width: 992px) {
+        width: 100%;
+      }
+      @media screen and (max-width: 480px) {
+        padding-top: 60px;
+      }
+      h1 {
+        font-weight: 700;
+        font-size: 34px;
+        span {
+          color: #2ca6b3;
+        }
+        @media screen and (max-width: 576px) {
+          font-size: 26px;
+        }
+      }
+      p {
+        width: 500px;
+        line-height: 1.5;
+        margin: 20px auto;
+        font-size: 16px;
+        font-weight: 400;
+        @media screen and (max-width: 576px) {
+          width: 80%;
+        }
+        @media screen and (max-width: 480px) {
+          width: 100%;
+          font-size: 15px;
+        }
+      }
+      .btns {
+        @media screen and (max-width: 480px) {
+          margin-top: 3rem;
+        }
+        button {
+          padding: 10px;
+          font-size: 14px;
+          margin-top: 10px;
+          background-color: #2ca6b3;
+          border-radius: 25px;
+          width: 250px;
+          @media screen and (max-width: 480px) {
+            width: 80%;
+          }
+          a {
+            color: white;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}
