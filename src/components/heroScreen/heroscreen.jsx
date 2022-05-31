@@ -80,10 +80,10 @@ const Heroscreen = () => {
       <div className="hero-content">
         <img src={logo} alt="" className="logo" width="500px" height="84px" />
         <div className="big-text">
-          <h1>
+          <p>
             Your advert on social media and top websites, discovered by
             consumers just waiting to engage with you.
-          </h1>
+          </p>
         </div>
       </div>
 
