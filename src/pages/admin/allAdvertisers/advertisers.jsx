@@ -30,8 +30,8 @@ const Advertisers = () => {
 
   const token = localStorage.getItem("auth_token");
   const authAxios = axios.create({
-    // baseURL: "https://test.canyousing.com.ng",
-    baseURL: "https://moovitapi.com",
+    baseURL: "https://test.canyousing.com.ng",
+    // baseURL: "https://moovitapi.com",
     headers: {
       Authorization: `Bearer ${token}`,
       "Content-Type": "applciation/json",

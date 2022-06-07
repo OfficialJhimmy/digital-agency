@@ -12,8 +12,8 @@ const Notifications = () => {
   const [notification, setNotification] = useState([]);
   const token = localStorage.getItem("auth_token");
   const authAxios = axios.create({
-    // baseURL: "https://test.canyousing.com.ng",
-    baseURL: "https://moovitapi.com",
+    baseURL: "https://test.canyousing.com.ng",
+    // baseURL: "https://moovitapi.com",
     headers: {
       Authorization: `Bearer ${token}`,
     },
@@ -53,8 +53,8 @@ const Notifications = () => {
                 <div className="notification-list">
                   {notification.map(
                     ({ id, type, notifiable_id, data, created_at }) => {
-                      console.log(created_at);
-                      const date_ = created_at.split("T")[0];
+                      const date_ = Date.parse(created_at.split("T")[0]);
+                      const newDate_ = new Date(date_).toDateString();
                       const time_ = created_at.split("T")[1];
                       const time_value = time_.split(".")[0];
                       let dynamic_text = "";
@@ -72,7 +72,7 @@ const Notifications = () => {
                                 {dynamic_text}
                               </h5>
                               <p>
-                                {date_} | {time_value}
+                                {newDate_} | {time_value}
                               </p>
                             </div>
                           </div>

@@ -21,8 +21,8 @@ const PublisherNotifications = () => {
   const [notification, setNotification] = useState([]);
   const token = localStorage.getItem("auth_token");
   const authAxios = axios.create({
-    // baseURL : "https://test.canyousing.com.ng",
-    baseURL: "moovitapi.com",
+    baseURL: "https://test.canyousing.com.ng",
+    // baseURL: "moovitapi.com",
     headers: {
       Authorization: `Bearer ${token}`,
     },
@@ -40,7 +40,7 @@ const PublisherNotifications = () => {
   const handleLogout = (e) => {
     e.preventDefault();
     authAxios
-      .post("https://moovitapi.com/api/user/logout")
+      .post("https://test.canyousing.com.ng/api/user/logout")
       .then((res) => {
         if (res.status === 200) {
           localStorage.clear();
@@ -146,7 +146,8 @@ const PublisherNotifications = () => {
                 {notification.map(
                   ({ id, type, notifiable_id, data, created_at }) => {
                     console.log(created_at);
-                    const date_ = created_at.split("T")[0];
+                    const date_ = Date.parse(created_at.split("T")[0]);
+                    const newDate_ = new Date(date_).toDateString();
                     const time_ = created_at.split("T")[1];
                     const time_value = time_.split(".")[0];
                     let dynamic_text = "";
@@ -164,7 +165,7 @@ const PublisherNotifications = () => {
                               {dynamic_text}
                             </h5>
                             <p>
-                              {date_} | {time_value}
+                              {newDate_} | {time_value}
                             </p>
                           </div>
                         </div>

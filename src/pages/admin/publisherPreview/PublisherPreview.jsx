@@ -27,8 +27,8 @@ const PublisherPreview = () => {
   const auth_id = localStorage.getItem("auth_id");
   const tg_id = localStorage.getItem("tg_id");
   const authAxios = axios.create({
-    // baseURL: "https://test.canyousing.com.ng",
-    baseURL: "https://moovitapi.com",
+    baseURL: "https://test.canyousing.com.ng",
+    // baseURL: "https://moovitapi.com",
     headers: {
       Authorization: `Bearer ${token}`,
     },

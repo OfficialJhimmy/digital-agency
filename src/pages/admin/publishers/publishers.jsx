@@ -9,6 +9,7 @@ import PuffLoader from "react-spinners/PuffLoader";
 import AdminTags from "../../../components/adminTags/adminTags";
 import "../allAdvertisers/advertiser.scss";
 import logo from "../../../assets/image 1.png";
+import ReactPaginate from "react-paginate";
 
 const AllPublishers = () => {
   const [notification, setNotification] = useState([]);
@@ -21,8 +22,8 @@ const AllPublishers = () => {
   });
   const token = localStorage.getItem("auth_token");
   const authAxios = axios.create({
-    // baseURL: "https://test.canyousing.com.ng",
-    baseURL: "https://moovitapi.com",
+    baseURL: "https://test.canyousing.com.ng",
+    // baseURL: "https://moovitapi.com",
     headers: {
       Authorization: `Bearer ${token}`,
       "Content-Type": "applciation/json",
@@ -68,6 +69,10 @@ const AllPublishers = () => {
     item.company.toLowerCase().includes(state.searchField.toLowerCase())
   );
   console.log(searchedArray);
+
+  const handlePageClick = (data) => {
+    console.log(data.selected);
+  };
 
   return (
     <div className="dashboard preview">
@@ -159,6 +164,25 @@ const AllPublishers = () => {
                       )}
                     </tbody>
                   </table>
+                  <ReactPaginate
+                    previousLabel={"<<"}
+                    nextLabel={">>"}
+                    breakLabel={"..."}
+                    pageCount={4}
+                    marginPagesDisplayed={2}
+                    pageRangeDisplayed={2}
+                    onPageChange={handlePageClick}
+                    containerClassName={"pagination justify-content-center"}
+                    pageClassName={"page-item"}
+                    pageLinkClassName={"page-link"}
+                    previousClassName={"page-item"}
+                    previousLinkClassName={"page-link"}
+                    nextClassName={"page-item"}
+                    nextLinkClassName={"page-link"}
+                    breakClassName={"page-item"}
+                    breakLinkClassName={"page-link"}
+                    activeClassName={"active"}
+                  />
                 </div>
               </>
             )}

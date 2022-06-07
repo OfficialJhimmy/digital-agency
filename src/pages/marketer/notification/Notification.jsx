@@ -19,8 +19,8 @@ const MarketerNotification = () => {
   const [notification, setNotification] = useState([]);
   const token = localStorage.getItem("auth_token");
   const authAxios = axios.create({
-    // baseURL: "https://test.canyousing.com.ng",
-    baseURL: "https://moovitapi.com",
+    baseURL: "https://test.canyousing.com.ng",
+    // baseURL: "https://moovitapi.com",
     headers: {
       Authorization: `Bearer ${token}`,
     },
@@ -31,6 +31,7 @@ const MarketerNotification = () => {
       const allNotifications = await authAxios.get("/api/admin/notifications");
       const notification_array = allNotifications.data;
       console.log(notification_array, "data");
+      console.log(notification_array.data);
       setNotification(notification_array.data);
     };
     fetchData();
@@ -38,7 +39,7 @@ const MarketerNotification = () => {
   const handleLogout = (e) => {
     e.preventDefault();
     authAxios
-      .post("https://moovitapi.com/api/admin/logout")
+      .post("https://test.canyousing.com.ng/api/admin/logout")
       .then((res) => {
         if (res.status === 200) {
           history.push("/admin-login");
@@ -54,7 +55,7 @@ const MarketerNotification = () => {
     console.log(id, "e.currrent.target");
     const date = new Date();
     const data = {
-      read_at: date.toISOString(),
+      read_at: date.toDateString(),
     };
     const readMessages = async () => {
       try {
@@ -143,8 +144,8 @@ const MarketerNotification = () => {
                 <div className="notification-list">
                   {notification.map(
                     ({ id, type, notifiable_id, data, created_at }) => {
-                      console.log(data);
-                      const date_ = created_at.split("T")[0];
+                      const date_ = Date.parse(created_at.split("T")[0]);
+                      const newDate_ = new Date(date_).toDateString();
                       const time_ = created_at.split("T")[1];
                       const time_value = time_.split(".")[0];
                       let dynamic_text = "";
@@ -160,7 +161,7 @@ const MarketerNotification = () => {
                                 {data.title} requested to put up a{dynamic_text}
                               </h5>
                               <p>
-                                {date_} | {time_value}
+                                {newDate_} | {time_value}
                               </p>
                             </div>
                           </div>

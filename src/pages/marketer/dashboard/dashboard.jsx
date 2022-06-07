@@ -32,8 +32,8 @@ const MarketerDashboard = () => {
   const auth_id = localStorage.getItem("auth_id");
   const auth_name = localStorage.getItem("auth_name");
   const authAxios = axios.create({
-    // baseURL: "https://test.canyousing.com.ng",
-    baseURL: "https://moovitapi.com",
+    baseURL: "https://test.canyousing.com.ng",
+    // baseURL: "https://moovitapi.com",
     headers: {
       Authorization: `Bearer ${token}`,
     },
@@ -63,7 +63,7 @@ const MarketerDashboard = () => {
   const handleLogout = (e) => {
     e.preventDefault();
     authAxios
-      .post("https://moovitapi.com/api/admin/logout")
+      .post("https://test.canyousing.com.ng/api/admin/logout")
       .then((res) => {
         if (res.status === 200) {
           localStorage.clear();

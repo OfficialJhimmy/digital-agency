@@ -23,7 +23,7 @@ const PublisherDashboard = () => {
   const [notification, setNotification] = useState([]);
   const [adsScript, setAdscript] = useState([]);
   const authAxios = axios.create({
-    baseURL: "https://moovitapi.com",
+    baseURL: "https://test.canyousing.com.ng",
     headers: {
       Authorization: `Bearer ${token}`,
     },
@@ -43,7 +43,7 @@ const PublisherDashboard = () => {
   const handleLogout = (e) => {
     e.preventDefault();
     authAxios
-      .post("https://moovitapi.com/api/user/logout")
+      .post("https://test.canyousing.com.ng/api/user/logout")
       .then((res) => {
         if (res.status === 200) {
           localStorage.clear();

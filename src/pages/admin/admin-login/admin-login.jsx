@@ -79,8 +79,8 @@ const AdminLogin = ({ navBackground }) => {
     newData.append("password", data.password);
 
     axios({
-      // url: "https://test.canyousing.com.ng/api/admin/login",
-      url: "https://moovitapi.com/api/admin/login",
+      url: "https://test.canyousing.com.ng/api/admin/login",
+      // url: "https://moovitapi.com/api/admin/login",
       method: "POST",
       data: newData,
       config: { headers: { "Content-Type": "multipart/form-data" } },
