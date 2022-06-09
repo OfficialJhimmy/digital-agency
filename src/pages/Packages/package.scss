@@ -6,8 +6,11 @@
         .dashboard-main-wrapper{
             flex: 1;
             display: block!important;
+            padding-top: 3rem!important;
             .dashboard-main{
                 // background: white;
+                margin-left : auto;
+                margin-right: auto;
                 padding-right: 20px;
                 max-width: 1140px;
                 .content-form{
@@ -56,6 +59,15 @@
                             font-weight: 700;
                             color: #EE315D;
                         }
+                    }
+                }
+                button{
+                    width: 250px;
+                    height: 45px;
+                    border-radius: 5px;
+                    margin: 30px auto;
+                    a{
+                        color : white;
                     }
                 }
             }
