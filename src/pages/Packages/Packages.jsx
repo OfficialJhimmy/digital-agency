@@ -1,69 +1,23 @@
-import React, { useState } from "react";
-import "../../dashboard/dashboard.scss";
-import "../../dashboard/createAds/createAds.scss";
-import Tags from "../../../components/Tags/Tags";
-import MobileTags from "../../../components/MobileTags/mobileTags";
-import { Link } from "react-router-dom";
-import hamburger from "../../../assets/hamburger.png";
-import logo from "../../../assets/image 1.png";
-import close from "../../../assets/close2.png";
-import RequestForm from "../../../components/RequestForm/RequestForm";
+import React from "react";
+import "../dashboard/dashboard.scss";
+import "../dashboard/createAds/createAds.scss";
+import "../Packages/package.scss";
+import Header from "../../components/header/header";
+import Footer from "../../components/footer/footer";
+import RequestForm from "../../components/RequestForm/RequestForm";
 
-const Packages = () => {
-  const [style, setStyle] = useState({
-    hide: false,
-    transformArrow: false,
-  });
-  const [ham, setHam] = useState(false);
-  const [contactAgent, setContactAgent] = useState(false);
-  const toggler = (e) => {
-    e.preventDefault();
-    setHam(!ham);
-  };
-  const handleClick = (e) => {
-    e.preventDefault();
-    setStyle({ hide: !style.hide, transformArrow: !style.transformArrow });
-  };
+const Package = ({ navBackground }) => {
   return (
-    <div className="dashboard create-ads">
-      <div className="small-title">
-        <div className="title-text justify-content-between">
-          <div className="logo">
-            <img
-              src={hamburger}
-              alt="hamburger"
-              width="25px"
-              className="hamburger"
-              onClick={toggler}
-            />
-            <Link to="/home" rel="canonical">
-              <img src={logo} alt="moovit-logo" className="logo-img" />
-            </Link>
-            <div className="text d-flex align-items-center mobile">
-              <p className="mt-1">Need help?</p>
-              <button onClick={() => setContactAgent(true)}>
-                Contact an agent
-              </button>
-            </div>
-          </div>
-          <div className="text d-flex align-items-center">
-            <p className="mt-1">Need help?</p>
-            <button onClick={() => setContactAgent(true)}>
-              Contact an agent
-            </button>
-          </div>
-        </div>
-        <div className="dashboard-main-wrapper">
-          <div className="tabs">
-            <Tags style={style} handleClick={handleClick} />
-          </div>
-          <div className="mobile-tag">
-            <MobileTags style={style} handleClick={handleClick} ham={ham} />
-          </div>
-          <div className="dashboard-main">
+    <div className="packages">
+      <Header navBackground={navBackground} />
+      <div className="dashboard create-ads">
+        <div className="container">
+          <div className="small-title">
+            <div className="dashboard-main-wrapper">
+              <div className="dashboard-main">
             <div className="content-form">
               <div className="row justify-content-center">
-                <h5>Packages</h5>
+              <h3>Choose a package that’s right for you</h3>
                 <div className="price-list">
                   <div className="tier">
                     <h6 className="title">Pepper Jollof </h6>
@@ -215,20 +169,23 @@ const Packages = () => {
               </div>
             </div>
           </div>
+          <div className="special-offer text-center mt-5 mb-4">
+<h2>Need something different?</h2>
+<div className="inner-text">
+  <p>
+    Contact us to create a customized package for your
+    company.
+  </p>
+  <RequestForm />
+</div>
+</div>
+            </div>
+          </div>
         </div>
       </div>
-      <div
-        className="contact-agent"
-        style={{ display: contactAgent ? "block" : "none" }}
-      >
-        {/* <h5>Contact an agent</h5> */}
-        <RequestForm />
-        <div className="close" onClick={() => setContactAgent(false)}>
-          <img src={close} alt="close btn" width="20px" height="20px" />
-        </div>
-      </div>
+      <Footer />
     </div>
   );
 };
 
-export default Packages;
+export default Package;
