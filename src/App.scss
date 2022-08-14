@@ -36,3 +36,39 @@ html {
     color: #a09f9f;
   }
 }
+
+.refuse-container{
+    height: 100vh;
+    /* width: 100%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.refuse-container h2 {
+    text-transform: capitalize;
+    font-size: 30px;
+    font-weight: 500;
+    overflow: hdden;
+}
+
+.refuse-container p {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 778px) {
+.refuse-container{
+    margin: 0 20px;
+}
+
+.refuse-container h2 {
+    font-size: 25px;
+}
+
+.refuse-container p {
+    font-size: 16px;
+}
+
+}
