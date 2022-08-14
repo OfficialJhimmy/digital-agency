@@ -8,7 +8,7 @@ function App() {
         <h2>
           This company has refused to pay their staffs for several months!
         </h2>
-        <p>Help! Please Help!, This is a act of bullying.</p>
+        <p>Help! Please Help!, This is an act of bullying.</p>
       </div>
     </div>
   );
